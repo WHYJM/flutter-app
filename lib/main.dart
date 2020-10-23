@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterapp/firstScreen.dart';
 
 void main() {
   runApp(MyApp());
@@ -20,13 +21,18 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.yellow,
+        primarySwatch: Colors.red,
         // This makes the visual density adapt to the platform that you run
         // the app on. For desktop platforms, the controls will be smaller and
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'HI Demo Home Page'),
+      // home: MyHomePage(title: 'HI Demo Home Page'),
+      home: Second(),
+      initialRoute: '/second',
+      routes: <String, WidgetBuilder>{
+        '/second': (BuildContext context) => new Second()
+      },
     );
   }
 }
@@ -112,6 +118,41 @@ class _MyHomePageState extends State<MyHomePage> {
         tooltip: 'Increment',
         child: Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
+    );
+  }
+}
+
+class Second extends StatelessWidget {
+  const Second({Key key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return new Scaffold(
+      appBar: AppBar(
+          title: new Text('Second'),
+          leading: Icon(Icons.access_alarm),
+          actions: <Widget>[
+            Icon(Icons.accessibility),
+          ]),
+      body: new Center(
+        child: Text('second'),
+      ),
+      bottomNavigationBar: new BottomNavigationBar(
+        items: <BottomNavigationBarItem>[
+          new BottomNavigationBarItem(
+            icon: Icon(Icons.account_balance),
+            label: 'bank',
+          ),
+          new BottomNavigationBarItem(
+            icon: Icon(Icons.contacts),
+            label: 'contact',
+          ),
+          new BottomNavigationBarItem(
+            icon: Icon(Icons.music_note),
+            label: 'music',
+          )
+        ],
+      ),
     );
   }
 }
