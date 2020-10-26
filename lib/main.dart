@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterapp/manager/ManagerScreen.dart';
 
 void main() {
   runApp(MyApp());
@@ -25,7 +26,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final List<Widget> _children = [First(), Second(), Third(), Fourth()];
+  final List<Widget> _children = [MangerScreen(), Second(), Third(), Fourth()];
   final List<String> tabTitles = ["First", "Second", "Third", "Fourth"];
 
   int _currentPageIndex = 0;
