@@ -28,14 +28,22 @@ class _MangerScreenState extends State<MangerScreen> {
             "articleTitle": "title1",
             "articlePic": "https://images.unsplash.com/reserve/Af0sF2OS5S5gatqrKzVP_Silhoutte.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2074&q=80",
             "userName": "user1",
-            "count": "246"
+            "count": "246",
+            "des1": "Internet",
+            "des2": "Serise B",
+            "des3": "> 10000 employees",
+            "des4":"Hot: Product manager... more than 500 positons"
           },
           {
             "articleId": "1002",
             "articleTitle": "title2",
             "articlePic": "https://images.unsplash.com/photo-1454942901704-3c44c11b2ad1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
             "userName": "user2",
-            "count": "247"
+            "count": "247",
+            "des1": "Internet",
+            "des2": "Serise B",
+            "des3": "> 10000 employees",
+            "des4":"Hot: Product manager... more than 500 positons"
           }
         ]
       }
